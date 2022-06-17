@@ -76,21 +76,32 @@ $( ".progress_bar_inner" ).each(function() {
 
 
 
+const elems = document.querySelectorAll('.progress_bar_inner');
+const triggerBottom = window.innerHeight;
+
 // Function for animation
 function elemAnime(){
-    const elems = document.querySelectorAll('.progress_bar_inner');
-    const triggerBottom = window.innerHeight;
 
     elems.forEach(elem=>{
         //Get element position releative to the viewport
         const position = elem.getBoundingClientRect().bottom;
 
-        if(position < triggerBottom){
+        if((position+10) < triggerBottom){
             elem.classList.remove('anime_pause');
         }
     });
 }
+function addDelay(){
+    elems.forEach(elem=>{
+        //Get element position releative to the viewport
+        let position = elem.getBoundingClientRect().bottom;
 
+        if(position < triggerBottom){
+            elem.style.animationDelay = "0.3s";
+        }
+    });
+}
+addDelay();
 window.addEventListener('scroll', elemAnime);
 setTimeout(elemAnime,400);
 
