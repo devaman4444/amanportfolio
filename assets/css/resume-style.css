@@ -223,11 +223,12 @@ p.about_description {
     margin: 0;
     padding-top: 10px;
     color: white;
+    white-space: nowrap;
 }
 
 .progress_bar_inner {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 40%;
     border-radius: 30px;
     background: linear-gradient(45deg, var(--pc1), var(--pc2));
