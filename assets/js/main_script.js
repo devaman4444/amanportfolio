@@ -74,8 +74,6 @@ $( ".progress_bar_inner" ).each(function() {
 
 // Scroll Animation
 
-
-
 const elems = document.querySelectorAll('.progress_bar_inner');
 const triggerBottom = window.innerHeight;
 
@@ -92,6 +90,7 @@ function elemAnime(){
     });
 }
 function addDelay(){
+    var delay = 0.3;
     elems.forEach(elem=>{
         //Get element position releative to the viewport
         let position = elem.getBoundingClientRect().bottom;
@@ -99,6 +98,7 @@ function addDelay(){
         if(position < triggerBottom){
             elem.style.animationDelay = "0.3s";
         }
+        delay = delay+0.1;
     });
 }
 addDelay();
