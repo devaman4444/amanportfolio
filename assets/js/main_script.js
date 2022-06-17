@@ -90,7 +90,7 @@ function elemAnime(){
     });
 }
 function addDelay(){
-    var delay = 0.3;
+    var delay = 0.4;
     elems.forEach(elem=>{
         //Get element position releative to the viewport
         let position = elem.getBoundingClientRect().bottom;
