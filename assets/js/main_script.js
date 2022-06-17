@@ -96,7 +96,7 @@ function addDelay(){
         let position = elem.getBoundingClientRect().bottom;
 
         if(position < triggerBottom){
-            elem.style.animationDelay = delay."s";
+            elem.style.animationDelay = delay+"s";
         }
         delay = delay+0.1;
     });
