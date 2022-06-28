@@ -4,7 +4,7 @@
 
 #hero-section
 {
-    background: url("../images/hero_bg.jpg");
+    background: linear-gradient(rgb(241 251 255 / 80%),rgb(244 251 255 / 80%)),url("../images/hero_bg_W-600.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,6 +32,10 @@ width: 120%;}
     z-index: 20;
 }
 
+.toggle-bar.visible{
+    box-shadow: -2px -2px 4px rgb(255 255 255 / 50%), 3px 3px 4px rgb(23 0 114 / 10%), inset -3px -3px 5px rgb(0 0 0 / 8%), inset 4px 4px 4px #ffffff!important;
+}
+
 /* Triangular Shape -----> */
 .tr-sh-container
 {
@@ -44,13 +48,10 @@ width: 120%;}
 {
     display: block;width: 340px;
     height: auto;
-    
-    
-    
-transform: scaleX(1.2);}
+    transform: scaleX(1.2);
+}
 .triangular-shape::before
 {
-    
     position: absolute;
     top: 2px;
     left: 2px;
@@ -211,6 +212,9 @@ top: 50px;}
 .logo {margin: 35px 0 70px 100px;}
 
 .hero-title {margin: 20px 0 50px 100px;}
+.hero-title h1 span {
+    color: var(--rc1);
+}
 
 /* <------ Hero Section Right Column */
 /* <--------- Hero Section Styles */
@@ -239,8 +243,15 @@ top: 50px;}
     color: var(--txtc);
     margin-top: 20px;
 }
-
-.card-icon svg {width: 50px;height: auto;}
+.card-icon {
+    width: 50px;
+    height: 50px;
+}
+.card-icon svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.1)) drop-shadow(-2px -2px 2px white);
+}
 /* <------ Your Benefits Section */
 
 
@@ -296,7 +307,7 @@ img.why-me-img {
 .service-box {
     position: relative;
     width: 100%;
-    min-height: inherit;
+    height: 100%;
     background: linear-gradient(to bottom right, var(--pc1),var(--pc2));
     border-radius: 20px;
     border-bottom-left-radius: 100px;
@@ -328,6 +339,7 @@ img.why-me-img {
     z-index: 500;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-bottom: 6px solid white;
     border-left: 6px solid white;
     border-right: 6px solid white;
@@ -365,7 +377,7 @@ img.why-me-img {
 .service-box .icon i{
     
     color: #fe7a68;position: relative;
-    font-size: 4rem;
+    font-size: 45px;
     z-index: 100000;
     box-shadow: 0px -48px 0px 14px var(--bgc);
     overflow: hidden;margin: 0;padding: 0;box-sizing: unset;text-shadow: 2px 2px 2px #00000033, -2px -2px 2px white;}
@@ -377,7 +389,7 @@ img.why-me-img {
     text-align: center;
 }
 .service-box .content h1{
-    font-size: 1.7rem;
+    font-size: 22px;
     color: #fff;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -440,7 +452,7 @@ img.why-me-img {
     display: block;
     position: relative;
     border-radius: 50%;
-    transition: transform 0.3s ease-in;
+    transition: transform 0.5s ease-out;
 }
 .get-in-tch-btn a:before {
     content: "";
@@ -450,7 +462,7 @@ img.why-me-img {
     border-radius: 50%;
     box-shadow: 4px 4px rgb(0 0 0 / 10%), -4px -4px white;
     filter: blur(4px);
-    transition: box-shadow 0.3s ease-in;
+    transition: box-shadow 0.5s ease-out;
 }
 .get-in-tch-btn svg {
     width: 80%;
@@ -547,7 +559,40 @@ footer .content ul li::marker {color: var(--pc1);}
 
     #hero-section{
         z-index: 1000;
+        padding-bottom: 160px;
     }
+    #hero-section>.content>.row>div:last-child{
+        padding: 0;
+    }
+
+    .hero-text-sec {
+        width: fit-content;
+        height: auto;
+        margin: auto;
+    }
+    .hero-text-sec>.skew-shape{
+        display: none;
+    }
+    .hero-text {
+        position: initial;
+        width: fit-content;
+    }
+    .hero-text p {
+        border-radius: 20px;
+        padding: 25px 20px;
+        padding-bottom: 25px;
+        font-size: 17px;
+        margin-bottom: 0;
+        background: linear-gradient(to bottom right, transparent 50%, rgb(0 0 0 / 3%) 50%), rgb(255 126 0 / 3%);
+    }
+    .hero-text .shape-outside
+    {
+        display: none;
+    }
+    .triangular-shape {
+        display: none;
+    }
+
     .navigationbar{
         position: fixed;
         top: 0;

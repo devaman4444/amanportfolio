@@ -99,6 +99,9 @@ ul.primary_category li a.active{
     text-transform: lowercase;
     transition: color 0.4s;
 }
+.category.active{
+    color: var(--pc1);
+}
 .category:hover{
     color: var(--pc1);
 }

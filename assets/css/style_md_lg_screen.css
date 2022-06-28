@@ -44,8 +44,30 @@ footer .contact ul li:hover,footer .credit .content ul li a:hover{
         margin-top: 0!important;
     }
 }
+@media screen and (min-width: 576px){
+    #hero-section{
+        background: linear-gradient(rgb(241 251 255 / 80%),rgb(244 251 255 / 80%)), url("../images/hero_bg_W-1000.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (min-width: 992px) {
+    #hero-section{
+        background: url("../images/hero_bg_W-1400.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
 @media screen and (min-width: 1400px)
 {
+    #hero-section{
+    background: url("../images/hero_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    }
+
     .info-cards-wrapper>.row 
     {
     gap: 80px 40px;
@@ -66,6 +88,7 @@ footer .contact ul li:hover,footer .credit .content ul li a:hover{
         gap: 80px 35px;
     }
 }
+
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px)
 {
@@ -117,9 +140,6 @@ footer .contact ul li:hover,footer .credit .content ul li a:hover{
 
 @media screen and (min-width: 768px) and (max-width: 991px)
 {
-    #hero-section>.content>.row>div:last-child{
-        padding-left: 50px;
-    }
     .hero-text-sec p{
         width: 650px;
         font-size: 25px;
@@ -148,43 +168,9 @@ footer .contact ul li:hover,footer .credit .content ul li a:hover{
 
     .portfolio-image{border-radius: 50px;}
 }
-@media screen and (min-width: 576px) and (max-width : 685px) {
-    #hero-section>.content>.row>div:last-child{
-        padding-left: 15px!important;
-    }
-    .hero-text-sec{
-        height: 430px!important;
-    }
-    .hero-text-sec p{
-        width: 485px!important;
-        font-size: 18px!important;
-        top:4px!important;
-    }
-    .hero-text .shape-outside {
-        width: 73px;
-    }
-    .hero-text-sec .skew-shape svg{
-        height: 300px!important;
-        left: -498px!important;
-    }
-    .tr-sh-container{
-        bottom: 55px!important;
-    left: -23px!important;
-    }
-    .triangular-shape{
-        width: 197px!important;
-    height: auto;
-    transform: scaleX(1)!important;
-    }
-}
+
 @media screen and (min-width: 576px) and (max-width: 767px)
 {
-    #hero-section{
-        padding-bottom: 0;
-    }
-    #hero-section>.content>.row>div:last-child{
-        padding-left: 50px;
-    }
     .hero-text-sec p{
         width: 550px;
         font-size: 20px;

@@ -17,12 +17,11 @@ section
 
 /* Hero Section ----------> */
 #hero-section {
-    padding-bottom: 0;
+    padding-bottom: 130px;
 }
-#hero-section>.content>.row>div:last-child {
-    padding-left: 2vw;
+#hero-section>.content>.row{
+    margin: 0;
 }
-
 .toggle-bar{
     top: 10px;
     right: 10px;
@@ -48,10 +47,10 @@ section
 
 .logo {
     width: fit-content;
-    margin: 52px auto 8vw auto;
+    margin: 70px auto 8vw auto;
 }
-.logo svg {
-    width: 87vw;
+.logo img {
+    width: 350px;
 }
 
 .hero-title {
@@ -67,49 +66,6 @@ section
     text-align: center;
 }
 
-.hero-text-sec {
-    height: calc(var(--height) + 80px);
-}
-.hero-text-sec>.skew-shape{
-    margin-left: 16px;
-    height: var(--height);
-    width: auto;
-    transform: skewX(7deg);
-    display: none;
-}
-.hero-text {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-    width: 90vw;
-}
-.hero-text p {
-    border-radius: 20px;
-    padding: 35px 25px;
-    padding-bottom: 25px;
-    font-size: 17px;
-    margin-bottom: 0;
-    background: linear-gradient(to bottom right, transparent 50%, rgba(255,255,255,0.3) 50%), rgb(255 126 0 / 25%);
-}
-.hero-text p::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 20px;
-    background: linear-gradient(90deg, var(--pc1), var(--pc2));
-    border-radius: 30px 30px 0 0;
-    top: 0;
-    left: 0;
-    opacity: 0.4;
-}
-.hero-text .shape-outside
-{
-    display: none;
-}
-
-.triangular-shape {
-    display: none;
-}
 /* <--------- Hero Section */
 
 
@@ -204,3 +160,10 @@ footer .container-lg>.row>div>h2{
     font-size: 16px;
 }
 /* <-------- Footer Section */
+
+
+@media screen and (max-width:400px) {
+    .logo img {
+        width: 250px;
+    }
+}

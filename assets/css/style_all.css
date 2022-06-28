@@ -268,7 +268,7 @@ section:first-child
 /* Primary Box Style */
 
 .prm-box {padding:20px;background: linear-gradient(180deg, var(--pc1), #ffffff00);border-radius: 30px;height: 100%;min-height: 300px;width: 100%;position: relative;box-shadow: var(--bxShdw1);z-index: 101;}
-.prm-box::before {content: '';position: absolute;;inset: 3px;background: linear-gradient(135deg, #ECF3F5, #fff);border-radius: 27px;z-index: -1;}
+.prm-box::before {content: '';position: absolute;;inset: 3px;background: linear-gradient(135deg, #ebf0f3, #fff);border-radius: 27px;z-index: -1;}
 
 a.tag-link {
     display: block;
@@ -435,7 +435,7 @@ a.tag-link {
 .service-box-wrapper:hover {
     transform: translateY(-20px);
 }
-a.social-btn:hover {transform: scale(1.2);margin-left: 10px;}
+a.social-btn:hover {transform: skewX(10deg) scale(1.1);}
 
 .h-btm-brd-sty:hover::before{
     width: 70%;

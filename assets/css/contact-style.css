@@ -59,18 +59,18 @@ contact-me .container-fluid  {
     margin-left:  auto;
     border-right:  0px;
     margin-bottom: -90px;
-    background:  linear-gradient(to right,  rgba(253,  116,  108,  0.8),  rgba(255,  144,  104,  0.8)) center center / cover,  url("../images/contact-image2.jpg");
+    background:  linear-gradient(to right,  rgba(253,  116,  108,  0.8),  rgba(255,  144,  104,  0.8)) center center / cover,  url("../images/contact-image1_W-600.jpg");
     background-size: cover;
-    background-position: center -100px;
+    background-position: center;
 }
 
 .contact-img-bg:last-child  {
     border-radius:  0px 300px 20px 0px;
     border-left:  0px;
     margin-top: -55px;
-    background:  linear-gradient(to right,  rgba(253,  116,  108,  0.8),  rgba(255,  144,  104,  0.8)) 0% 0% / cover,  url("../images/contact-image1.jpg");
+    background:  linear-gradient(to right,  rgba(253,  116,  108,  0.8),  rgba(255,  144,  104,  0.8)) 0% 0% / cover,  url("../images/contact-image2_W-600.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 .contact-navigation .lft-column ul  {
@@ -168,6 +168,7 @@ contact-me .container-fluid  {
 
 a.social-btn:hover  {
     margin-left:  0px;
+    transform: scale(1.1);
 }
 
 .contact-card .heading:hover  {
@@ -281,10 +282,13 @@ a.social-btn:hover  {
         margin-bottom: 20px;
         margin-right: -15px;
         background-position: center;
+        background:  linear-gradient(to right,  rgba(253,  116,  108,  0.8),  rgba(255,  144,  104,  0.8)) center center / cover,  url("../images/contact-image1_W-400.jpg");
     }
     .contact-img-bg:last-child {
         margin-top: 20px;
         margin-left: -15px;
+        background-position: top;
+        background:  linear-gradient(to right,  rgba(253,  116,  108,  0.8),  rgba(255,  144,  104,  0.8)) center center / cover,  url("../images/contact-image2_W-400.jpg");
     }
     .contact-card {
         max-width: 450px;
@@ -350,6 +354,16 @@ a.social-btn:hover  {
     .cntct-me-p > span{
         display: inline;
         padding: 0!important;
+    }
+
+    .contact-img-bg{
+        border: 5px solid white;
+    }
+    .contact-img-bg:last-child  {
+        border-radius:  0px 50vw 15px 0px;
+    }
+    .contact-img-bg:first-child  {
+        border-radius:  15px 0 0 50vw;
     }
 }
 
